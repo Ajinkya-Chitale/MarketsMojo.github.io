@@ -1391,4 +1391,75 @@ footer .copy {
     display: none;
   }
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1224px) {
+  header .bottomHead .tabletMobile {
+    font-size: 1.875rem;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .bottomHead .overlay {
+    display: block;
+    height: calc(100% - 99px);
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 99px;
+    left: 0;
+    background: #101115;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header .bottomHead .overlay.width100 {
+    width: 100%;
+  }
+  header .bottomHead .overlay .closeNavBtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  header .bottomHead .overlay .overlay-content {
+    position: relative;
+    width: 100%;
+    padding: 1.875rem;
+  }
+  header .bottomHead .overlay .overlay-content .mobileNav .mobileDDParent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #d2d5d7;
+  }
+  header .bottomHead .overlay .overlay-content .mobileNav .mobileDDParent h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  header .bottomHead .overlay .overlay-content .mobileNav a {
+    color: #cccccc;
+    font-size: 0.875rem;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    padding: 0.188rem 0;
+    text-transform: capitalize;
+  }
+  header .bottomHead .overlay .overlay-content .mobileNav a:hover {
+    text-decoration: underline;
+  }
+  header .bottomHead .myNavbar {
+    display: none !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */

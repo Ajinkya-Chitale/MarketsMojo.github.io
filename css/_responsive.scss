@@ -455,3 +455,76 @@
     }
   }
 }
+
+@include respond(otherDesktop) {
+  header .bottomHead {
+    .tabletMobile {
+      font-size: 1.875rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    .overlay {
+      display: block;
+      height: calc(100% - 99px);
+      width: 0;
+      position: fixed;
+      z-index: 2000;
+      top: 99px;
+      left: 0;
+      background: $topHead;
+      overflow-x: hidden;
+      transition: 0.5s;
+
+      &.width100 {
+        width: 100%;
+      }
+
+      .closeNavBtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+      .overlay-content {
+        position: relative;
+        width: 100%;
+        padding: 1.875rem;
+
+        .mobileNav {
+          .mobileDDParent {
+            display: flex;
+            flex-flow: column;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid $scrollTrack;
+
+            h4 {
+              font-size: 1rem;
+              text-transform: uppercase;
+            }
+          }
+
+          a {
+            color: #cccccc;
+            font-size: 0.875rem;
+            text-decoration: none;
+            transition: 0.3s;
+            padding: 0.188rem 0;
+            text-transform: capitalize;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .myNavbar {
+      display: none !important;
+    }
+  }
+}
