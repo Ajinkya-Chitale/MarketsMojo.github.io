@@ -607,6 +607,7 @@ header .bottomHead .loginSection .user .dropdown .dropdown-menu .dropdown-item .
 
 .upcomingWebinars {
   padding: 1.875rem 4.688rem;
+  margin-top: 0;
 }
 
 .upcomingWebinars h1,
