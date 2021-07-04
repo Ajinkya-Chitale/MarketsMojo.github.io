@@ -1,0 +1,457 @@
+@include respond(sliderSmallAdjustment) {
+  .review {
+    .review-container {
+      .review-slider {
+        .review-card {
+          width: 14rem !important;
+        }
+      }
+    }
+  }
+}
+
+@include respond(sliderAdjustment) {
+  .review {
+    .review-container {
+      .review-slider {
+        .review-card {
+          width: 17rem;
+        }
+      }
+    }
+  }
+
+  header .bottomHead {
+    .logo {
+      img {
+        width: 135px;
+      }
+    }
+
+    .loginSection {
+      gap: 0.5rem;
+
+      .notifications {
+        .dropdown {
+          .dropdown-menu {
+            right: -53px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond(smallAdjustment) {
+  .topHead {
+    .marqueeSec {
+      padding: 0 1.875rem !important;
+      flex-flow: column;
+
+      div {
+        &:nth-child(3) {
+          display: none;
+        }
+
+        &:nth-child(1) {
+          display: flex;
+          width: 100%;
+
+          span {
+            &:first-child {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  header .bottomHead {
+    gap: 0.938rem;
+    
+    .loginSection {
+      .input-group.mobile {
+        .search-container {
+          #searchIcon {
+            &:hover,
+            &:focus {
+              width: 10rem;
+            }
+          }
+
+          .fa-search:hover ~ #searchIcon {
+            width: 10rem;
+          }
+        }
+      }
+    }
+  }
+
+  .upcomingWebinars {
+    .timings {
+      #accordion {
+        .card {
+          .card-header {
+            padding-top: 0.625rem;
+
+            .date,
+            .time,
+            .heading,
+            h5,
+            .host,
+            .image {
+              flex: unset;
+            }
+
+            .date,
+            .time {
+              flex-flow: row;
+              flex: 1;
+            }
+
+            .heading {
+              width: 100%;
+              text-align: center;
+              margin: 0.625rem 0.625rem 0;
+            }
+
+            h5 {
+              width: 100%;
+              justify-content: center;
+              order: 1;
+            }
+
+            .host {
+              flex: 1;
+              align-items: center;
+
+              .position {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    flex-flow: column;
+
+    .leftSide {
+      ul {
+        justify-content: center;
+      }
+    }
+
+    .rightSide {
+      margin-top: 0.938rem;
+      text-align: center;
+    }
+  }
+}
+
+@include respond(timingAdjustment) {
+  .upcomingWebinars {
+    .timings {
+      #accordion {
+        .card {
+          .card-header {
+            h5 {
+              order: 1;
+              flex: unset;
+              justify-content: center;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond(mobile) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .session {
+    .sessionInfo {
+      .speakers {
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .upcomingWebinars {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.125rem;
+    }
+
+    .firstPara {
+      margin-bottom: 0.625rem;
+    }
+
+    .timings {
+      width: 100%;
+
+      .form-check.outLabel.selectAll {
+        padding-left: 0.938rem;
+      }
+
+      #accordion {
+        .card {
+          .card-header {
+            .form-check.outLabel {
+              padding-left: 0.938rem;
+            }
+
+            .date,
+            .time {
+              span {
+                font-size: 1rem;
+              }
+            }
+
+            .heading {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .inviteBtn {
+      .btn {
+        width: 80%;
+      }
+    }
+  }
+
+  header {
+    .topHead {
+      .topHeadOtherSec {
+        #accordion1 {
+          .card {
+            .card-body {
+              padding: 0.938rem 0.938rem 0;
+
+              .marketDetails {
+                width: 100% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond(tablet) {
+  .topHead {
+    .marqueeSec {
+      div {
+        &:nth-child(2),
+        &:nth-child(4) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .bottomHead {
+    .tabletMobile {
+      font-size: 1.875rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    .overlay {
+      height: calc(100% - 99px);
+      width: 0;
+      position: fixed;
+      z-index: 2000;
+      top: 99px;
+      left: 0;
+      background: $topHead;
+      overflow-x: hidden;
+      transition: 0.5s;
+
+      &.width100 {
+        width: 100%;
+      }
+
+      .closeNavBtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+      .overlay-content {
+        position: relative;
+        width: 100%;
+        padding: 1.875rem;
+
+        .mobileNav {
+          .mobileDDParent {
+            display: flex;
+            flex-flow: column;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid $scrollTrack;
+
+            h4 {
+              font-size: 1rem;
+              text-transform: uppercase;
+            }
+          }
+
+          a {
+            color: #cccccc;
+            font-size: 0.875rem;
+            text-decoration: none;
+            transition: 0.3s;
+            padding: 0.188rem 0;
+            text-transform: capitalize;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .myNavbar {
+      display: none !important;
+    }
+
+    .loginSection {
+      .input-group {
+        justify-content: flex-end;
+
+        &.desktop {
+          display: none;
+        }
+
+        &.mobile {
+          .search-container {
+            display: inline-flex;
+            position: relative;
+
+            .fa-search {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: -1.7rem;
+              font-size: 1rem;
+              z-index: 1;
+              color: ghostwhite;
+              cursor: pointer;
+
+              &:hover ~ #searchIcon {
+                width: 25rem;
+              }
+            }
+
+            #searchIcon {
+              position: absolute;
+              height: 2.5rem;
+              width: 2.5rem;
+              font-size: 1rem;
+              border-radius: 5rem;
+              padding: 0 1rem;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              border: none;
+              outline: none;
+              background: #5b616f;
+              color: ghostwhite;
+              cursor: pointer;
+
+              &::placeholder {
+                color: ghostwhite;
+              }
+
+              &:hover,
+              &:focus {
+                width: 25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .review,
+  .session {
+    padding: 1.875rem;
+  }
+
+  .upcomingWebinars {
+    padding: 1.875rem;
+
+    .timings {
+      width: 100%;
+
+      #accordion {
+        .card {
+          .card-header {
+            h5 {
+              .moreInfo {
+                .material-icons {
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  header {
+    .topHead {
+      .topHeadOtherSec {
+        #accordion1 {
+          .card {
+            .card-body {
+              .marketDetails {
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond(desktop) {
+  header {
+    .bottomHead {
+      .tabletMobile,
+      .overlay {
+        display: none;
+      }
+      .loginSection {
+        .input-group {
+          &.mobile {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

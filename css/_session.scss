@@ -1,0 +1,52 @@
+// Session Section CSS Start
+.session {
+    background: $gainsBoro;
+    padding: 1.875rem 4.688rem;
+
+    .sessionInfo {
+        p {
+            text-align: center;
+            color: $lightBlack;
+            font-size: 0.875rem;
+        }
+
+        .speakers {
+            p {
+                text-align: left;
+
+                strong {
+                    color: $lightGray;
+                }
+
+                span {
+                    font-weight: 500;
+                    color: $lightGray;
+                }
+            }
+
+            h3 {
+                color: $lightBlue;
+                margin-bottom: 0.313rem;
+            }
+
+            .content {
+                text-align: justify;
+            }
+
+            .socialLinks {
+                display: flex;
+                gap: 1.2rem;
+
+                span {
+                    cursor: pointer;
+                    transition: 0.5s ease-in-out;
+                    color: $darkBlue;
+
+                    &:hover {
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+        }
+    }
+}

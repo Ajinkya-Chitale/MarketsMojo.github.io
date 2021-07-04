@@ -1,0 +1,43 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == sliderSmallAdjustment {
+        @media only screen and (max-width: 359px) {
+          @content;
+        } // 350px
+      }  
+
+  @if $breakpoint == sliderAdjustment {
+    @media only screen and (max-width: 400px) {
+      @content;
+    } // 420px
+  }
+
+  @if $breakpoint == smallAdjustment {
+    @media only screen and (max-width: 576px) {
+      @content;
+    } // 550px
+  }
+
+  @if $breakpoint == timingAdjustment {
+    @media only screen and (min-width: 577px) and (max-width: 660px) {
+      @content;
+    } // 660px
+  }
+
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 767px) {
+      @content;
+    } // 767px
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 992px) {
+      @content;
+    } // 992px
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 992px) {
+      @content;
+    } // 992px
+  }
+}

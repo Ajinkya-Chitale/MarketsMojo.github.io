@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.813rem;
+    font-weight: 700;
+    color: $darkBlue;
+}
+
+h2 {
+    font-size: 2rem;
+    color: $lightBlue;
+}
+
+.title {
+    text-align: center;
+    color: $darkBlue;
+    font-weight: 700;
+}
+
+section {
+    margin: 1.875rem 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.overflowHidden {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+
+    &-thumb {
+        background: $scrollThumb;
+        border-radius: 0.5rem;
+    }
+
+    &-track {
+        background: $scrollTrack;
+        border-radius: 0.25rem;
+    }
+}

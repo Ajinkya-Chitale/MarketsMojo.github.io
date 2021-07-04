@@ -1,0 +1,73 @@
+// Review Section CSS Start
+.review {
+    padding: 1.875rem 4.688rem;
+
+    .review-container {
+        .review-slider {
+            .review-card {
+                width: 20rem;
+                margin: 2rem auto;
+                box-shadow: 0.5rem 0.5rem 0 rgba(194, 193, 193, .5);
+                border-radius: 0.125rem;
+                border: 0.094rem solid rgba(194, 193, 193, .5);
+                padding: 0 0.625rem;
+    
+                .twit {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    span {
+                        padding: 0.25rem;
+                        background: $gainsBoro;
+                        cursor: pointer;
+                        color: $sky;
+                    }
+                }
+
+                .comment {
+                    display: flex;
+                    gap: 0.5rem;
+
+                    .image {
+                        div {
+                            height: 1.875rem;
+                            width: 1.875rem;
+                            border-radius: 50%;
+                            background: $darkBlue;
+                            color: $white;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            line-height: 1.875rem;
+                        }
+                    }
+
+                    .content {
+                        .name {
+                            color: $black;
+                            font-weight: 700;
+                            font-size: 0.875rem;
+                            margin-bottom: 0.313rem;
+
+                            span {
+                                font-size: 0.75rem;
+                                color: $gainsBoro;
+                                margin-left: 0.313rem;
+                            }
+                        }
+
+                        .userFeedback {
+                            font-size: 0.875rem;
+
+                            a {
+                                color: $sky;
+                                text-decoration: none;
+                                font-weight: 500;                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

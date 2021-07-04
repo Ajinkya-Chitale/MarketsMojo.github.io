@@ -1,0 +1,41 @@
+footer {
+  background: $footerBG;
+  color: $footerForeground;
+  font-size: 0.75rem;
+  padding: 0.938rem;
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 0;
+
+      li {
+        a {
+          color: $footerForeground;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: none;
+            color: $footerForeground;
+          }
+        }
+      }
+    }
+  }
+
+  .copy {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.938rem;
+    padding-top: 0.625rem;
+    border-top: 1px solid $scrollThumb;
+  }
+}
