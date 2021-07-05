@@ -636,6 +636,9 @@ header .bottomHead .loginSection .user .dropdown .dropdown-menu .dropdown-item .
 }
 
 .upcomingWebinars .timings .form-check.outLabel.selectAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-transform: uppercase;
   margin-bottom: 0.625rem;
   font-size: 0.875rem;
@@ -644,6 +647,7 @@ header .bottomHead .loginSection .user .dropdown .dropdown-menu .dropdown-item .
 .upcomingWebinars .timings .form-check.outLabel.selectAll span {
   color: #00ABCF;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .upcomingWebinars .timings .form-check.outLabel .form-check-label {

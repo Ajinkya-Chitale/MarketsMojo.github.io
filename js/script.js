@@ -1,6 +1,7 @@
 // Select/DeSelect All CheckBox
 let checkboxes = document.querySelectorAll("input[type='checkbox']");
 let selectAll = document.querySelector(".selectAll");
+let selectAllWebinar = document.querySelector("#selectAllWebinar");
 
 function checkAll(myCheckBox) {
   if(myCheckBox.checked == true) {
@@ -14,6 +15,14 @@ function checkAll(myCheckBox) {
     })
   }
 }
+
+checkboxes.forEach((box) => {
+  box.addEventListener("click", (e) => {
+    if(e.target.checked == false) {
+      selectAllWebinar.checked = false;
+    }
+  })
+})
 
 // Header Accordion
 let collapse1 = document.querySelector("#collapse1");

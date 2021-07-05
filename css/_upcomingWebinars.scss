@@ -28,6 +28,7 @@
 
         .form-check.outLabel {
             &.selectAll {
+                display: flex;
                 text-transform: uppercase;
                 margin-bottom: 0.625rem;
                 font-size: 0.875rem;
@@ -35,6 +36,7 @@
                 span {
                     color: $lightBlue;
                     font-weight: 600;
+                    cursor: pointer;
                 }
             }
 
