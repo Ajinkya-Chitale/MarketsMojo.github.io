@@ -8,6 +8,35 @@
       }
     }
   }
+
+  .session {
+    .sessionInfo {
+      .speakers {
+        .content {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  header .bottomHead {    
+    .loginSection {
+      .input-group.mobile {
+        .search-container {
+          #searchIcon {
+            &:hover,
+            &:focus {
+              width: 13rem !important;
+            }
+          }
+
+          .fa-search:hover ~ #searchIcon {
+            width: 13rem !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 @include respond(sliderAdjustment) {
@@ -76,12 +105,12 @@
           #searchIcon {
             &:hover,
             &:focus {
-              width: 10rem;
+              width: 14rem;
             }
           }
 
           .fa-search:hover ~ #searchIcon {
-            width: 10rem;
+            width: 14rem;
           }
         }
       }
