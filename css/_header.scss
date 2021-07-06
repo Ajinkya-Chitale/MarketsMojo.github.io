@@ -207,11 +207,22 @@ header {
                     .navbar-nav {
                         gap: 2rem;
                         align-items: center;
+                        height: 61px;
 
                         .nav-item {
                             &:hover {
                                 .nav-link {
                                     color: $lightBlue;
+
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        background: $lightBlue;
+                                        height: 3px;
+                                        width: 100%;
+                                    }
                                 }
                             }
 
@@ -219,6 +230,8 @@ header {
                                 color: $white;
                                 display: flex;
                                 align-items: center;
+                                padding: 0 0.5rem;
+                                position: relative;
 
                                 &::after{
                                     display: none;
@@ -242,9 +255,11 @@ header {
 
                             &.dropdown {
                                 position: static;
+                                height: 100%;
+                                display: inline-flex;
 
                                 .megamenu {
-                                    margin-top: 0.313rem;
+                                    // margin-top: 0.313rem;
                                     border-radius: 0 0 0.25rem 0.25rem;
                                     background: $bottomHead;
                                     color: $white;

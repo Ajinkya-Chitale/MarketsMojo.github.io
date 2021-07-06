@@ -296,10 +296,21 @@ header .bottomHead .myNavbar .navbar #main_nav .navbar-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 61px;
 }
 
 header .bottomHead .myNavbar .navbar #main_nav .navbar-nav .nav-item:hover .nav-link {
   color: #00ABCF;
+}
+
+header .bottomHead .myNavbar .navbar #main_nav .navbar-nav .nav-item:hover .nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #00ABCF;
+  height: 3px;
+  width: 100%;
 }
 
 header .bottomHead .myNavbar .navbar #main_nav .navbar-nav .nav-item .nav-link {
@@ -310,6 +321,8 @@ header .bottomHead .myNavbar .navbar #main_nav .navbar-nav .nav-item .nav-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 0.5rem;
+  position: relative;
 }
 
 header .bottomHead .myNavbar .navbar #main_nav .navbar-nav .nav-item .nav-link::after {
@@ -340,10 +353,13 @@ header .bottomHead .myNavbar .navbar #main_nav .navbar-nav .nav-item .nav-link .
 
 header .bottomHead .myNavbar .navbar #main_nav .navbar-nav .nav-item.dropdown {
   position: static;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 header .bottomHead .myNavbar .navbar #main_nav .navbar-nav .nav-item.dropdown .megamenu {
-  margin-top: 0.313rem;
   border-radius: 0 0 0.25rem 0.25rem;
   background: #2c303c;
   color: #FFFFFF;
